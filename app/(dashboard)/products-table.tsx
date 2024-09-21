@@ -25,11 +25,11 @@ export function ProductsTable({
   products,
   offset,
   totalProducts
-}: {
+}: Readonly<{
   products: SelectProduct[];
   offset: number;
   totalProducts: number;
-}) {
+}>) {
   let router = useRouter();
   let productsPerPage = 5;
 
